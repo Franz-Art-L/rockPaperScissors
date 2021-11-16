@@ -50,14 +50,14 @@ height: auto;
 }
 
 .container {
-  max-width: 960px;
+    max-width: 950px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 40px;
 }
 
-.col-3 {
+.imgSelection {
     width: 22%;
     padding-left: 25px;
     padding-right: -5px;
@@ -73,7 +73,36 @@ height: auto;
   animation: flash 2s linear 1s infinite;
 }
 
-.scoreboard {
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+button {
+  border-radius: 60px;
+  cursor: pointer;
+  padding: 20px;
+  justify-content: center;
+}
+
+button:hover {
+  border-radius: 60px;
+  cursor: pointer;
+  transform: translate3d(0px, -8px, 0px);
+  transition: all 0.25s;
+}
+
+.newGameBtn {
+  padding-right: 25px;
+}
+
+.gameMode {
+  justify-content: center;
+  padding-top: 40px;
+  margin: 50px;
+}
+
+.scoreboard, .result {
 width: 400px;
 margin: 60px auto;
 border: 8px solid white;
@@ -85,12 +114,11 @@ position: relative;
 }
 
 hr {
+    max-width: 800px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
     border-top: 2px solid #f44336;
-    max-width: 960px;
-    
 }
 
 .text-muted {
