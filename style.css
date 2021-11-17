@@ -1,10 +1,15 @@
 header {
-  background-color:  white;
+  background-color: green
   padding: 20px;
 }
 
 body {
   background-color: rgba(0, 139, 137, 0.734);
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 figure {

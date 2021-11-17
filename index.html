@@ -6,6 +6,7 @@
   <title>Ishoboy Rock Paper Scissors</title>
   <link rel ="stylesheet" type="text/css" href="style.css">
   <link rel="icon" href="images/default-monochrome-white.svg">
+  
 </head>
 
 <body>
@@ -46,7 +47,7 @@
           <div>
             <h2>You: <span class="resultChoice"></span></h2>
           </div>
-          <div>
+          <div data-final-column>
             <h2>Computer: <span class="resultChoice"></span></h2>
           </div>
           
@@ -54,17 +55,13 @@
   </div>
 
     <div class="gameMode">
-        <div>
-          <button><h2>Best of 3</h2></button>
-        </div>
-
-        <div>
-          <button><h2>Best of 5</button></h2>
-        </div>
 
         <div>
           <button class="newGameBtn" onClick="window.location.reload();"><h3>New Game</h3></button>
         </div>
+        <br>
+        <br>
+        <button onclick="dMode()" style="padding: 4px;padding-left: 11px;">Toggle Dark Mode</button>
     
     </div>
   
@@ -76,22 +73,22 @@
                   </div>
 
                   <div>
-                    <h2>You: <span class="resultScore">0</span></h2>
+                    <h2>You: <span class="resultScore" data-your-score>0</span></h2>
                   </div>
 
                   <div>
-                    <h2>Computer: <span class="resultScore">0</span></2>
+                    <h2>Computer: <span class="resultScore" data-computer-score>0</span></2>
                   </div>
                   
-                  <div>
+                  <!-- I will add this line once I will be able to get the logic on how to have a best of 3 game<div>
                     <h2>Winner: <span class="resultWinner"></span></h2>
                   </div>
-                
+                -->
     </div>
 </div>
 
 <hr>
-<center class="copyright text-muted small">Copyright © Francis Artemio Landia. 2021. All Rights Reserved</center>
+<center class="copyright text-muted small">Made by © <a href="https://vigilant-kalam-7aa245.netlify.app/" target="_blank" rel="noopener noreferrer">Francis Artemio Landia</a>. 2021. All Rights Reserved.</center>
 
 <footer>
 
