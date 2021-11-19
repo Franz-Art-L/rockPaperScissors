@@ -5,6 +5,7 @@ header {
 
 body {
   background-color: rgba(0, 139, 137, 0.734);
+  position: relative;
 }
 
 .dark-mode {
@@ -15,10 +16,6 @@ body {
 figure {
   display: block;
   cursor: pointer;
-}
-
-.clearfix {
-  clear: both;
 }
 
 #rockP:hover {
@@ -47,6 +44,10 @@ figure {
 border-top-right-radius: 12px;
 border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
+}
+
+.bestOfThree {
+  font-size: 0.6em;
 }
 
 .img-fluid {
@@ -103,7 +104,7 @@ button:hover {
 
 .gameMode {
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 0px;
   margin: 50px;
 }
 
