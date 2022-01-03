@@ -98,6 +98,10 @@ button:hover {
   padding-right: 25px;
 }
 
+#myAudio {
+  padding-right: 25px;
+}
+
 .gameMode {
   justify-content: center;
   padding-top: 0px;
@@ -123,8 +127,14 @@ hr {
     border-top: 2px solid #f44336;
 }
 
+
+
 .text-muted {
   
   color: #6c757d!important;
   
+}
+
+#footers {
+  margin-top: -12px;
 }

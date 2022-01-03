@@ -60,11 +60,12 @@ function makeSelection(selection) {
   if(youAreAWinner) yourScoreTally++; console.log(yourScoreTally);
   if(computerWinner) computerScoreTally++; console.log(computerScoreTally);
   
-  if(computerScoreTally === winningScore) { //thanks to Junale and Nash! :)
+  if(computerScoreTally === winningScore) { //thanks to Junel and Nash! :)
     alert('SORRY 😞 COMPUTER WINS THE MATCH! better luck next time LOSER!! HAHAHAHA 😆');
   }
 
-  if(yourScoreTally === winningScore) { //thanks to Junale and Nash! :)
+  if(yourScoreTally === winningScore) { //thanks to Junel and Nash! :)
+    document.getElementById('myAudio').play();
     alert('CONGRATULATIONS! 🎉 🎉 🎉 YOU WIN THE MATCH!');
   }
 
