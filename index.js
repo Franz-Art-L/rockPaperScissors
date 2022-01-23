@@ -62,11 +62,14 @@ function makeSelection(selection) {
   
   if(computerScoreTally === winningScore) { //thanks to Junel and Nash! :)
     alert('SORRY 😞 COMPUTER WINS THE MATCH! better luck next time LOSER!! HAHAHAHA 😆');
+    confirm('Please click the New Game button to restart the game.');
   }
 
   if(yourScoreTally === winningScore) { //thanks to Junel and Nash! :)
     document.getElementById('myAudio').play();
     alert('CONGRATULATIONS! 🎉 🎉 🎉 YOU WIN THE MATCH!');
+    backgroundCelebration();
+    confirm('Please click New Game button to restart the game. 😆👍');
   }
 
 }
@@ -91,3 +94,14 @@ function randomSelection() {
   const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
   return SELECTIONS[randomIndex];
 }
+
+var timer 
+function backgroundCelebration() {
+  var body = document.querySelector('body');
+  var colors = ['red', 'yellow', 'green'];
+  var count = 0;
+  timer = window.setInterval(() => {
+    var newColor = colors[++count % colors.length];
+    body.style.backgroundColor = newColor;
+  }, 100);
+};
